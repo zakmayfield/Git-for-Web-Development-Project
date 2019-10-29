@@ -228,7 +228,12 @@ target="_blank"
   Now we should be able to see these changes
   You can check the status in between by using git status
 
-Stretch Questions
+
+
+
+
+
+Stretch Questions 1
 
 1. What is the difference between an inline element and a block element?
 
@@ -270,3 +275,29 @@ Stretch Questions
   }
 
   This makes the acutal height = not equaling padding and margin.
+
+
+
+
+  Stretch 2:
+
+  What is a merge confict and how do we resolve it?
+
+    A merge conflic happens when two commits are competing and the computer doesn't know what to do. Say you are working on your own branch and a co worker is working on the master branch. Your co worker then finishes, adds, commits and pushes... now by the time you add and commit the master branch has been updated. You are then working working on an outdated version of the file. So then you will need to go in and confirm which commits to accept, if not both. You can prevent merge conflicts by working on your branch and not the master.
+
+
+  pull, rebase, merge?
+
+    a. git pull will pull changes down from the remote source and integrate them into your document.
+
+    b. git rebase is essentially like merging but you're taking all of the commits on one branch and transferring them to another.
+
+    c. git merge will take one branch and combine it into another. (after finishing a new feature on a branch you can then merge it into the master branch by git merge)
+
+  revert, reset, clean
+
+    a. reset has two options, normal and --hard if you reset to a certain commit then each log of that commit will erase but the code will still be available in your editor. "git reset --hard <commit#>" will delete your commits and delete the code in the editor. Caution.
+
+    b. revert basically takes the commit you want to "revert" and replaces it with a new commit with the desired changes.
+
+    c. git clean will wipe your files 
